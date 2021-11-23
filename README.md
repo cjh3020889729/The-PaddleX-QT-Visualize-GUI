@@ -11,4 +11,5 @@ The-PaddleX-QT-Visualize-GUI
     - PaddleX可视化推理
 
 界面展示:
+
 ![](./deploy/cpp/docs/jetson_deploy/images/gpu_infer.png)
