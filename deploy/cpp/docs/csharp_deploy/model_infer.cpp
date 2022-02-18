@@ -291,7 +291,7 @@ extern "C" __declspec(dllexport) void Mask_ModelPredict(const unsigned char* img
 		{
 			if (mask_output[j] == 0)
 			{
-				mask_output[j] = results[0].det_result->boxes[i].mask.data[j];
+				mask_output[j] = results[0].det_result->boxes[i].mask.data.data()[j] * results[0].det_result->boxes[i].category_id;
 			}
 		}
 
