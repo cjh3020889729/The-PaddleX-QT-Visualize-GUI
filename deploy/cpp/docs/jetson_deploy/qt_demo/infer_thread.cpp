@@ -702,6 +702,7 @@ void InferThread::Seg_Image()
 
     // Predict output result
     unsigned char out_image[image.cols * image.rows];
+    memset(out_image, 0, sizeof (out_image));
 
     doing_infer_ = true;
     try {
@@ -1484,6 +1485,7 @@ void InferThread::Mask_Image()
     int bbox_num[1];
     char labellist[1000];
     unsigned char out_image[image.cols * image.rows];
+    memset(out_image, 0, sizeof (out_image));
 
     doing_infer_ = true;
     try {
