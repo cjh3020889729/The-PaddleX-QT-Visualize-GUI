@@ -13,3 +13,8 @@ The-PaddleX-QT-Visualize-GUI
 界面展示:
 
 ![](./deploy/cpp/docs/jetson_deploy/images/gpu_infer.png)
+
+
+- 特别感谢
+
+    - [lijilai](https://github.com/lijilai): 项目开启Tensorrt加速功能，需要在`deploy/cpp/docs/jetson_deploy/model_infer.cpp`的InitModel函数内的合适位置添加`engine_config.use_trt = true;`——注意启动Tensorrt时，请确保模型运行在GPU运行状态。
